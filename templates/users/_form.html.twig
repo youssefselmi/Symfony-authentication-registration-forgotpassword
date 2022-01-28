@@ -1,0 +1,33 @@
+{{ form_start(form) }}
+
+<div class="col-md-3">
+    <div class="form-group">
+
+        <label class="bmd-label-floating">    {{ form_label(form.email) }}
+        </label>
+        <input type="text" class="form-control"   {{ form_widget(form.email) }}
+
+
+
+        <label class="bmd-label-floating">     {{ form_label(form.password)
+            }}
+
+        </label>
+        <input type="text" class="form-control"   {{ form_widget(form.password)
+        }}
+
+
+
+
+
+
+
+
+
+    </div>
+
+</div>
+
+{{ form_end(form) }}
+
+<button class="btn btn-primary">{{ button_label|default('Save') }}</button>
